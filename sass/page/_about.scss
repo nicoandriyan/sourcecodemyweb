@@ -1,0 +1,178 @@
+.about{
+	background-color: rgba(249,249,249,0.9);
+	box-shadow: inset 0 10px 10px -5px rgb(224,224,224);
+	border-bottom: solid 1px rgb(224,224,224);
+}
+.left{
+	float: left;
+	position: relative;
+	top: 30px;
+	width: 40%;
+	height: 350px;
+	.topleft{
+		background-color: #00863C;
+		width: 100%;
+		height: 15px;
+		border-bottom: 2px solid white;
+	}
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.bottomleft{
+		background-color: #00863C;
+		width: 100%;
+		height: 25px;
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+		position: relative;
+		top: -15px;
+		left: 50%;
+	}
+}
+.bottomright{
+		position: relative;
+		top: 367px;
+		left: 30%;
+		background-color: #0055A5;
+		width: 70%;
+		height: 25px;
+		border-top: 2px solid white;
+		border-left: 2px solid white;
+		border-bottom: 2px solid white;
+	}
+.right{
+	float: right;
+	position: relative;
+	top: -20px;
+	background-color: rgb(255,255,255);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 400px;
+	padding: 20px 30px;	
+	ul{
+		list-style: none;
+		li:nth-child(1){
+			position: relative;
+			left: -40px;
+			color: rgb(192,160,98);
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+		button{
+			padding: 10px 25px;
+		}
+	}
+}
+Table{
+	tbody{
+		tr{
+			&:nth-child(2n+1){
+				td{
+					padding-left: 15px;
+				}
+			},
+			&:nth-child(2n){
+				td{
+					&:last-child{
+						text-align:center;
+						}
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}
+Table tr td{
+	&:nth-child(1){
+		width: 30%;
+	}
+	&:nth-child(2){
+		padding-left: -10px;
+	}
+}
+Table, .name{
+	padding: 6px 20px 6px 20px;
+	margin-bottom: 3px;
+}
+.name{
+	color: rgb(71,71,71);
+	font-weight: bold;
+}
+#table{
+	margin-bottom: 3px;
+}
+
+.bar{
+	position: relative;
+	left:0%;
+	background-color: rgb(5,16,34);
+	width: 90%;
+	height: 15px;
+	margin-top:5px;
+}
+.poin{
+	background-color: rgb(81,130,170);
+	width: 0%;
+	height: 100%;
+}
+.htmlpoin{
+	@extend .poin;
+	animation: loadhtml 1000ms forwards;
+}
+.csspoin{
+	@extend .poin;
+	animation: loadcss 1000ms forwards;
+}
+.jspoin{
+	@extend .poin;
+	animation: loadjs 1000ms forwards;
+}
+.jquerypoin{
+	@extend .poin;
+	animation: loadjquery 1000ms forwards;
+}
+.reactpoin{
+	@extend .poin;
+	animation: loadreact 1000ms forwards;
+}
+@keyframes loadhtml{
+	from{
+		width:0%;
+	}
+	to{
+		width: 65%;
+	}
+}
+@keyframes loadcss{
+	from{
+		width:0%;
+	}
+	to{
+		width: 80%;
+	}
+}
+@keyframes loadjs{
+	from{
+		width:0%;
+	}
+	to{
+		width: 55%;
+	}
+}
+@keyframes loadjquery{
+	from{
+		width:0%;
+	}
+	to{
+		width: 50%;
+	}
+}
+@keyframes loadreact{
+	from{
+		width:0%;
+	}
+	to{
+		width: 70%;
+	}
+}

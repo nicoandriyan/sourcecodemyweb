@@ -1,0 +1,32 @@
+{
+  "name": "portofolio-3",
+  "homepage": "https://nicoandriyan.github.io/amazingnick",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "immutability-helper": "^2.2.2",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-css-transition-replace": "^2.2.1",
+    "react-dom": "^15.5.4",
+    "react-google-maps": "^6.3.0",
+    "react-router-dom": "^4.1.1",
+    "react-scroll": "^1.5.2",
+    "units": "^1.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "node-sass": "^4.5.2",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass --watch --include-path sass sass/page/main.scss src/css/main.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}

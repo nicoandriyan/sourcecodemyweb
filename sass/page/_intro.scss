@@ -1,0 +1,17 @@
+.intro{
+	background-color: rgba(255,255,255,0.9);
+	h1{
+		color: #C0A062;
+		font-family: 'Merriweather', serif;
+		line-height: 1.5;
+		font-weight: bold;
+	}
+	p{
+		font-family: 'Merriweather', serif;
+		line-height: 2;
+		span{
+			color: #C0A062;
+			cursor: pointer;
+		}
+	}
+}
